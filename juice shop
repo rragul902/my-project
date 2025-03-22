@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juice Kadai - Fresh & Tasty</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f8f8;
+            text-align: center;
+        }
+        header {
+            background-color: #ff6600;
+            color: white;
+            padding: 20px;
+            font-size: 24px;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            background-color: #ff8800;
+            overflow: hidden;
+            margin: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            padding: 15px;
+        }
+        section {
+            padding: 40px 20px;
+        }
+        .menu-container {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+        .item {
+            background-color: white;
+            margin: 20px auto;
+            padding: 20px;
+            border-radius: 10px;
+            width: 30%;
+            box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease-in-out;
+        }
+        .item:hover {
+            transform: scale(1.05);
+        }
+        .item img {
+            width: 100%;
+            border-radius: 10px;
+        }
+        .order-btn {
+            background-color: #ff6600;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            margin-top: 10px;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: background 0.3s ease-in-out;
+        }
+        .order-btn:hover {
+            background-color: #cc5500;
+        }
+        footer {
+            background-color: #ff6600;
+            color: white;
+            padding: 15px;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to Juice Kadai</h1>
+        <p>Fresh Juice, Burgers, and Pizza</p>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#menu">Menu</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+    <section id="menu">
+        <h2>Our Menu</h2>
+        <div class="menu-container">
+            <div class="item">
+                <img src="https://source.unsplash.com/600x400/?juice" alt="Fresh Juice">
+                <h3>Juices - Fresh & Natural</h3>
+                <button class="order-btn">Order Now</button>
+            </div>
+            <div class="item">
+                <img src="https://source.unsplash.com/600x400/?burger" alt="Tasty Burger">
+                <h3>Burgers - Hot & Tasty</h3>
+                <button class="order-btn">Order Now</button>
+            </div>
+            <div class="item">
+                <img src="https://source.unsplash.com/600x400/?pizza" alt="Cheesy Pizza">
+                <h3>Pizza - Cheesy & Delicious</h3>
+                <button class="order-btn">Order Now</button>
+            </div>
+        </div>
+    </section>
+    <section id="about">
+        <h2>About Us</h2>
+        <p>Juice Kadai offers the best quality fast food and fresh juices at affordable prices. Visit us for a great experience!</p>
+    </section>
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>📍 Location: Coimbatore</p>
+        <p>📞 Phone: 6382654137</p>
+    </section>
+    <footer>
+        <p>&copy; 2025 Juice Kadai. All rights reserved.</p>
+    </footer>
+</body>
+</html>
